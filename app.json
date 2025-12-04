@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "NewUI",
+    "slug": "NewUI",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "bundledAssets":  [
+        "**/*.png",
+        "**/*.jpg",
+        "**/*.ttf",
+        "**/*.woff",
+        "**/*.woff2"
+      ]
+      
+
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "assetBundlePatterns": [
+      "**/*",
+      "**/*.ttf",
+      "**/*.woff",
+      "**/*.woff2"
+    ],
+    
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "778d218e-c365-4ae8-98ec-e7c44b254d12"
+      }
+    },
+    "owner": "aleena38"
+  }
+}
+
